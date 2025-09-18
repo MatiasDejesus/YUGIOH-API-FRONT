@@ -1,0 +1,63 @@
+html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Buscar Carta Yu-Gi-Oh!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Buscar Carta por ID</h1>
+        <input type="number" id="cartaId" placeholder="Ingresa ID de la carta">
+        <button id="enviar">Buscar Carta</button>
+
+        <div id="card" style="display: none;" class="carta">
+            <img id="imagenCarta" src="" alt="Carta">
+            <h3 id="nombre"></h3>
+            <p id="tipo"></p>
+            <p id="ataque"></p>
+            <p id="defensa"></p>
+        </div>
+        
+    </div>
+
+<br>
+
+    <div class="container">
+
+        <h1>Buscar Personaje por ID</h1>
+        <input type="number" id="personajeId" placeholder="Ingresa ID del personaje">
+        <button id="enviar2">Buscar Personaje</button>
+
+        <div id="perso" style="display: none;" class="personaje">
+            <img id="imagenPersonaje" src="" alt="personaje">
+            <h3 id="nombrePersonaje"></h3>
+            <p id="edadPersonaje"></p>
+        </div>
+        
+    </div>
+
+
+
+    <button id="verTodos">Ver Todos los Personajes</button>
+    <div id="todos" class = "lista-personajes"></div>
+
+<br>
+
+    <div class="container">
+        <h1>Agregar Nuevo Personaje</h1>
+        
+        <form id="personajeForm">
+            <input type="text" id="nombre" placeholder="Nombre" required>
+            <input type="number" id="edad" placeholder="Edad" required>
+            <input type="text" id="imagen" placeholder="URL de la imagen">
+            <br>
+            <button type="submit">Guardar</button>
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
