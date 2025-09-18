@@ -1,0 +1,145 @@
+body {
+    font-family: 'Georgia', serif;
+    background: radial-gradient(circle at center, #2b0d0d, #000);
+    color: #f8f8f8;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(20, 20, 20, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid gold;
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.4);
+}
+
+/* Inputs y botones */
+input, button {
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #d4af37;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+input {
+    width: 80%;
+    background: #1c1c1c;
+    color: #f8f8f8;
+}
+
+button {
+    background: linear-gradient(145deg, #c0392b, #8e1a12);
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 0 10px rgba(192, 57, 43, 0.7);
+}
+
+button:hover {
+    background: linear-gradient(145deg, #e74c3c, #c0392b);
+    box-shadow: 0 0 20px rgba(231, 76, 60, 1);
+}
+
+/* Carta Yu-Gi-Oh! */
+.carta {
+    border: 3px solid gold;
+    border-radius: 12px;
+    padding: 10px;
+    margin-top: 10px;
+    background: linear-gradient(135deg, #fceabb, #f8b500);
+    color: #000;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+    text-align: center;
+}
+
+.carta img {
+    max-width: 250px;
+    border: 2px solid #000;
+    border-radius: 8px;
+    background: #fff;
+    margin-bottom: 10px;
+}
+
+/* Texto estilo carta */
+.carta h3 {
+    font-family: 'Papyrus', fantasy;
+    font-size: 40px;
+    color: #2c1a08;
+    text-shadow: 1px 1px 2px #fff6;
+}
+
+.carta p {
+    font-size: 20px;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+
+
+
+
+/* personaje Yu-Gi-Oh! */
+.personaje {
+    border: 3px solid gold;
+    border-radius: 12px;
+    padding: 10px;
+    margin-top: 10px;
+    background: linear-gradient(135deg, #fceabb, #f8b500);
+    color: #000;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+    text-align: center;
+}
+
+.personaje img {
+    max-width: 250px;
+    border: 2px solid #000;
+    border-radius: 8px;
+    background: #fff;
+    margin-bottom: 10px;
+}
+
+/* Texto estilo carta */
+.personaje h3 {
+    font-family: 'Papyrus', fantasy;
+    font-size: 40px;
+    color: #2c1a08;
+    text-shadow: 1px 1px 2px #fff6;
+}
+
+.personaje p {
+    font-size: 20px;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+
+.lista-personajes {
+    display: flex;           /* 📌 Activa Flexbox */
+    flex-wrap: wrap;         /* Permite que salten de línea si no caben */
+    gap: 20px;               /* Espacio entre tarjetas */
+    justify-content: center; /* Centra las tarjetas */
+}
+
+
+.tarjeta-personaje {
+    width: 200px;            /* Ancho fijo para cada tarjeta */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.tarjeta-personaje img {
+    width: 100%;             /* La imagen ocupa el ancho de la tarjeta */
+    height: auto;
+    border-radius: 5px;
+}
